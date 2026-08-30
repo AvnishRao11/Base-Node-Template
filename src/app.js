@@ -1,9 +1,7 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import cookieParser from 'cookie-parser';
-import apiRouter from './routes/index.js';
-
-
+const express = require('express');
+const dotenv = require('dotenv');
+const cookieParser = require('cookie-parser');
+const apiRouter = require('./routes');
 
 dotenv.config();
 
@@ -15,8 +13,5 @@ app.use(cookieParser());
 
 app.use('/api', apiRouter);
 
-
-export default app;
-
-
+module.exports = app;
 

@@ -1,7 +1,7 @@
-import { infoController } from './info.controller.js';
+const { infoController } = require('./info.controller');
 
 const controller = {
     infoController,
 };
 
-export default controller;
+module.exports = controller;

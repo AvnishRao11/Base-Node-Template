@@ -1,9 +1,9 @@
-import serverConfig from './server.config.js';
-import loggerConfig from './logger.config.js';
+const serverConfig = require('./server.config');
+const loggerConfig = require('./logger.config');
 
-const  config ={
+const config = {
     serverConfig,
-    loggerConfig
-}
+    loggerConfig,
+};
 
-export default config;
+module.exports = config;

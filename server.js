@@ -1,14 +1,12 @@
-import app from './src/app.js';
-import config from './src/config/index.js';
+const app = require('./src/app');
+const config = require('./src/config');
 
+const port = config.serverConfig.port;
 
-const port =config.serverConfig.port ; 
-
-app.listen(port,()=>{
-    try{
+app.listen(port, () => {
+    try {
         console.log(`Server is running on port ${port}`);
-    }
-    catch(err){
+    } catch (err) {
         console.log(`server error ${err}`);
     }
-})
+});

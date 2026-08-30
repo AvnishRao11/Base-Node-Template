@@ -1,6 +1,6 @@
-import StatusCodes from 'http-status-codes';
+const StatusCodes = require('http-status-codes');
 
-export const infoController = (req, res) => {
+const infoController = (req, res) => {
     res.status(StatusCodes.OK).json({
         success: true,
         message: 'The API is live',
@@ -9,4 +9,5 @@ export const infoController = (req, res) => {
     });
 };
 
+module.exports = { infoController };
 
