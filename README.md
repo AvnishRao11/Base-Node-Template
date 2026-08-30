@@ -59,3 +59,7 @@ Lets take a look inside the `src` folder
    - If youre setting up your developement environment , then write the username of your db , password of your db and in dialect 
    mention whatever db you are using for ex : mysql , mariadb etc . 
    
+- To run the server execute the following comaand : 
+```
+   npm run dev
+```
